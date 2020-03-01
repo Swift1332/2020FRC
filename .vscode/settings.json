@@ -1,0 +1,23 @@
+{
+  "python.pythonPath": "c:\\Users\\justinc\\tmp\\swift2020\\.venv\\Scripts\\python.exe",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+
+  // Python testing
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.nosetestsEnabled": false,
+
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.envFile": "${workspaceFolder}/.vscode/.env",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache/": true,
+    "**/build": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
+}

@@ -1,0 +1,10 @@
+pyfrc
+robotpy-navx
+robotpy-rev
+robotpy-ctre
+RobotPy-Limelight
+
+black
+flake8
+pytest
+pytest-cov

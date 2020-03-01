@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 88
+max-complexity = 10
+per-file-ignores = 
+  eggplant/task_scheduler_service/server/api/__init__.py:F401
+  eggplant/task_scheduler_service/server/database.py:F401
