@@ -24,7 +24,13 @@
     {
       "label": "Install python libraries",
       "type": "shell",
-      "command": ".venv/Scripts/Activate.ps1; python -m pip install -r requirements.txt",
+      "command": ".venv/Scripts/Activate.ps1; python -m pip install -r requirements.txt --upgrade",
+      "problemMatcher": []
+    },
+    {
+      "label": "Upgrade RoboRio",
+      "type": "shell",
+      "command": ".venv/Scripts/Activate.ps1; robotpy-installer download-robotpy; robotpy-installer install-robotpy",
       "problemMatcher": []
     }
   ]

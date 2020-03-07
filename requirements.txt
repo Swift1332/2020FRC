@@ -4,6 +4,8 @@ robotpy-rev
 robotpy-ctre
 RobotPy-Limelight
 
+robotpy-installer
+
 black
 flake8
 pytest
