@@ -3,12 +3,11 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
-
+  "python.autoComplete.addBrackets": true,
   // Python testing
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
   "python.testing.nosetestsEnabled": false,
-
   "editor.formatOnSave": true,
   "python.formatting.provider": "black",
   "python.envFile": "${workspaceFolder}/.vscode/.env",

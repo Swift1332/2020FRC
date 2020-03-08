@@ -7,7 +7,8 @@ from .component1 import Component1
 class Component2:
 
     component1: Component1
-    some_motor: wpilib.Talon
+    some_motor_1: wpilib.Talon
+    some_motor_2: wpilib.Talon
 
     # This is changed to the value in robot.py
     SOME_CONSTANT: int
@@ -26,4 +27,6 @@ class Component2:
         self.did_something = True
 
     def execute(self):
-        self.some_motor.set(self.set_point)
+        pass
+        # self.some_motor_1.set(self.set_point)
+        # self.some_motor_2.set(self.set_point)
