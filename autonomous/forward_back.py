@@ -16,10 +16,8 @@ class ForwardBack(AutonomousStateMachine):
     def drive_forward(self):
         self.drivetrain.set_inputs(self.drive_speed, 0.0)
         print("forward")
-        self.drivetrain.execute()
 
     @timed_state(duration=5)
     def drive_backward(self):
         self.drivetrain.set_inputs(self.drive_speed * -1, 0.0)
         print("back")
-        self.drivetrain.execute()
