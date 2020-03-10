@@ -14,10 +14,12 @@ class ForwardBack(AutonomousStateMachine):
 
     @timed_state(duration=2, next_state="drive_backward", first=True)
     def drive_forward(self):
-        """This happens first"""
         self.drivetrain.set_inputs(self.drive_speed, 0.0)
+        print("forward")
+        self.drivetrain.execute()
 
     @timed_state(duration=5)
     def drive_backward(self):
-        """This happens second"""
         self.drivetrain.set_inputs(self.drive_speed * -1, 0.0)
+        print("back")
+        self.drivetrain.execute()

@@ -70,6 +70,8 @@ class MyRobot(MagicRobot):
         self.elevator_solenoid = wpilib.DoubleSolenoid(PCM_PORT_2, PCM_PORT_3)
         self.climber_solenoid = wpilib.DoubleSolenoid(PCM_PORT_0, PCM_PORT_1)
 
+        self.test_servo = wpilib.Servo(0)
+
         # JOYSTICK AND BUTTONS
 
         self.joystick_0 = wpilib.Joystick(JOYSTICK_0)
